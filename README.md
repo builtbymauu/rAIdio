@@ -14,7 +14,7 @@ This project consists of three independent modules operating together:
    A watchdog service that monitors a shared directory for incoming text or pre-processed image files. It queries the `gemini-flash-latest` model to analyze any querys/issue and broadcasts the AI's advice out loud using Text-to-Speech (gTTS).
 
 # Laptop end:
-#  Prerequisites & Installation
+## Prerequisites & Installation
 
 ## 1. Python Requirements
 This project requires Python 3.10+. If using Windows, Anaconda is highly recommended to handle the audio routing and C++ dependencies natively.
