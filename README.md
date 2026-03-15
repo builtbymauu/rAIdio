@@ -1,7 +1,7 @@
 # rAIdio
 An end to end radio transmission system using SSTV for image transmission and AM modulation for audio transmission to connect offline users to Gemini AI.
 # RAIDIO: Rural AI Hub
-RAIDIO is communications bridge that allows offline rural users to access advanced AI. It encodes voice and images into analog radio signals (AM and SSTV), transmits them locally, demodulates the data, and processes it through Google's Gemini AI to provide spoken advice.
+RAIDIO is communications bridge that allows offline rural users to access advanced AI. It encodes voice and images into analog radio signals (AM and SSTV), transmits them locally, demodulates the data, and processes it through Google's Gemini AI to provide spoken advice in the preferrred local language.
 
 # System Architecture
 
@@ -42,7 +42,14 @@ Note: This will calibrate the room's noise floor for 3 seconds before actively l
 
 # Phone end:
 **Note = This end of the project could be app based, but proficiency in python lead us down the following path:**
-In order to encode the signal..
-Bash
-python "RAIDIO phone app code.py"
-Use the app to select an image or record audio. The app will generate the radio signal audio. Play this audio near the microphone running the Listener script to trigger the full decoding and AI response pipeline.
+
+In order to encode the signal we must run python on an android device.
+## Steps to install python on android:
+
+1. Download `Pydroid 3` from the Play Store.
+2. Download `Pydroid repository plugin` from the Play Store as well.
+3. Download all the following dependencies by going to ---> Menu ---> Pip ---> Install: `Kivy, Pillow, plyer, pygame, PySSTV`
+5. Create a new file in Pydroid and copy the code from `RADIO phone app code.py` into the editor.
+6. Run the code by pressing the yellow play button
+
+The app allows the user to choose their preferred means of input to be either an audio file or an image. Based on the option chosen the app detects the newest audio/image stored as the input that needs to be encoded. Post encoding the phones speaker is used to transmit this frequency audio which then mmust be played near the microphone of the listening device to trigger the decoding and AI response pipeline.
