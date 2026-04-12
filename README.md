@@ -52,4 +52,4 @@ In order to encode the signal we must run python on an android device.
 5. Create a new file in Pydroid and copy the code from `RADIO phone app code.py` into the editor.
 6. Run the code by pressing the yellow play button
 
-The app allows the user to choose their preferred means of input to be either an audio file or an image. Based on the option chosen the app detects the newest audio/image stored as the input that needs to be encoded. Post encoding the phones speaker is used to transmit this frequency audio which then mmust be played near the microphone of the listening device to trigger the decoding and AI response pipeline.
+The app allows the user to choose their preferred means of input to be either an audio file or an image. Based on the option chosen the app detects the newest audio/image stored as the input that needs to be encoded. Post encoding the phones speaker is used to transmit this frequency audio which then must be played near the microphone of the listening device to trigger the decoding and AI response pipeline.
